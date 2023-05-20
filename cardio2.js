@@ -33,6 +33,9 @@ console.log(everyPeople);
 // Array.prototype.find()
 // find the comment with the ID of 823423
 
+const findId = comments.find((comment) => comment.id === 823423);
+console.log(findId);
+
 // Array.prototype.findIndex()
 // Find the comment with this ID
 // delete the comment with the ID of 823423
