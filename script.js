@@ -109,9 +109,16 @@ const people = [
                .map(link => link.text)
                 .filter(streetName => streetName.includes('de'));
     console.table(de);*/
-    
+
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+
+    const alpha=people.sort((a,b)=>{
+    const [aLast,aFirst]=a.split(', ');
+    const [bLast,bFirst]=b.split(',');
+    return aLast>bLast?1:-1;
+    })
+    console.table(alpha);
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
