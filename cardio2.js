@@ -25,6 +25,11 @@ console.log(somePeople);
 
 // Array.prototype.every() // is everyone 19 or older?
 
+const everyPeople = people.every(
+  (person) => new Date().getFullYear() - person.year >= 19
+);
+console.log(everyPeople);
+
 // Array.prototype.find()
 // find the comment with the ID of 823423
 
